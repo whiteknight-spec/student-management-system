@@ -21,4 +21,31 @@ def display_students():
         print("Age:",student["age"])
         print("marks:",student["marks"])
 
-display_students()
+# display_students()
+
+def add_student():
+    name=input("enter the student name :")
+    age=int(input("enter the student age :"))
+    mark1=int(input("enter mark1 :"))
+    mark2=int(input("enter mark2 :"))
+    mark3=int(input("enter mark3 :"))
+    marks=[mark1,mark2,mark3]
+    student={
+        "name":name,
+        "age":age,
+        "marks":marks
+    }
+    students.append(student)
+
+add_student()
+
+def search_student():
+    name=input("enter the student name to search:")
+    for student in students:
+        if student["name"]==name:
+            print("Name:",student["name"])
+            print("Age:",student["age"])
+            print("marks:",student["marks"])
+
+search_student()
+# display_students()
